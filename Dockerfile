@@ -1,3 +1,15 @@
+# FROM python:3.9
+
+# WORKDIR /code
+
+# COPY ./requirements.txt /code/requirements.txt
+
+# RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+
+# COPY . .
+
+# CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "7860"]
+
 
 # Use the official Python image as the base image
 #FROM python:3.9-slim
@@ -13,10 +25,11 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the  xgb_model.joblib files to the container
-COPY /xgb.joblib .
+COPY xgb.joblib .
 
 # Copy the current directory contents into the container at /app
 COPY . /app
+
 # Expose the port that the FastAPI application will run on
 EXPOSE 7860
 
