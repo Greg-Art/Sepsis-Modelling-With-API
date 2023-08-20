@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  sepsis-predictor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./model:/dev/app/model
+    environment:
+      - PYTHONUNBUFFERED=1
