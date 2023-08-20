@@ -13,7 +13,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the  xgb_model.joblib files to the container
-COPY /model/xgb.joblib .
+COPY /xgb.joblib .
 
 # Copy the current directory contents into the container at /app
 COPY . /app
