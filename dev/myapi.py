@@ -13,7 +13,7 @@ from fastapi import FastAPI, Query, Request, HTTPException
 
 app = FastAPI()
 
-# Load the pickled machine learning model
+# loading my best model with joblib 
 model = joblib.load("model/xgb.joblib")
 
 ###
