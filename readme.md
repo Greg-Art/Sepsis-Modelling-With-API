@@ -156,7 +156,7 @@ This app provides a simple and efficient way to predict sepsis using patient dat
 
 This project is developed and maintained by:
 
-Sonny Agorvor -Otchie feel free to reach out to me with any questions or feedback!
+Gregory Kwaku Arthur feel free to reach out to me with any questions or feedback!
 
 #### ✨ Acknowledgments
 
